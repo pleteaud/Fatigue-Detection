@@ -50,6 +50,10 @@ FEATURES TO BE EXTRACTED FROM ECG SIGNAL |  FEATURES TO BE EXTRACTED FROM EDA SI
 * The periodogram power spectral density estimate was calculated and plotted.
 * The area under the curve for the LF, HF, and Total band was calculated using the power spectral density plot.
 
+Subject A - Day One - ECG Raw |  Subject A - Day One - ECG Processed | Subject A - Day One - ECG Feature Trends | Subject A - Day One - Power Spectral Density
+:-------------------------:|:-------------------------:
+![ECG_Raw](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20ECG%20Raw.jpg?raw=true) | ![ECG Processed](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20ECG.jpg?raw=true) | ![ECG FT Trend](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20Heart%20Trends.jpg?raw=true) | ![ECG PSD](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20PSD.jpg?raw=true)
+
 ### Analysis Steps For EDA
 #### Time Domain Analysis
 * Mean SCL and SCR was extracted using Ledalab[6]
