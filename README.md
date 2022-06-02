@@ -39,9 +39,7 @@ FEATURES TO BE EXTRACTED FROM ECG SIGNAL |  FEATURES TO BE EXTRACTED FROM EDA SI
 :-------------------------:|:-------------------------:
 ![ECG Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(ECG).jpg) | ![EDA Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(EDA).jpg)
 
-### ECG
-Raw data was filtered using a Butterworth low pass filter (N-Order and Cutoff frequency varied based on the quality of signal)
-%%% image of raw data and filtered data
+### Analysis Steps For ECG
 #### Time Domain Analysis
 * Plot of the ECG data with the R and S wave labeled was created.
 * Heart Rate was calculated as number of peaks per minutes.
@@ -50,16 +48,16 @@ Raw data was filtered using a Butterworth low pass filter (N-Order and Cutoff fr
 #### Frequency Domain Analysis
 * A bandpass filter was used to filter the ECG signal into the LF band (0.04-0.15Hz) and HF band (0.15–0.4 Hz) [10].
 * The periodogram power spectral density estimate was calculated and plotted.
-%%% image of power spectral density
 * The area under the curve for the LF, HF, and Total band was calculated using the power spectral density plot.
 
-### EDA
-Raw data was filtered using a Butterworth low pass filter (N-Order = 5, Cut-off Frequency of 5Hz)
+Subject A - Day One - ECG Raw |  Subject A - Day One - ECG Processed | Subject A - Day One - ECG Feature Trends | Subject A - Day One - Power Spectral Density
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![ECG_Raw](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20ECG%20Raw.jpg?raw=true) | ![ECG Processed](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20ECG.jpg?raw=true) | ![ECG FT Trend](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20Heart%20Trends.jpg?raw=true) | ![ECG PSD](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20PSD.jpg?raw=true)
 
+### Analysis Steps For EDA
 #### Time Domain Analysis
 * Mean SCL and SCR was extracted using Ledalab[6]
 * Results were averaged over each session of tests for Mean SCL and SCR.
-%%%%% image of ledalab processing
 
 ## Classification Approach
 Given that prolonged stress is the main contributor to mental fatigue, a possible classification algorithm could go as follows (using the subject's min and max mean EDA and ECG features as stress thresholds):
@@ -67,18 +65,15 @@ Given that prolonged stress is the main contributor to mental fatigue, a possibl
 ![Classification_Workflow](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Possible%20Classification%20Workflow.jpg?raw=true)
 
 ## Results and Conclusion
-Below is a table summarizing features that displayed a pattern for Subject 2: 
+### Notable features for Subject 2: 
+
 Normalized HR and HRV vs Time (Subject 2) |  Normalized SCR and SCL vs Time (Subject 2)
 :-------------------------:|:-------------------------:
-![HR_HRV](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(ECG).jpg) | ![SCR_SCL](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(EDA).jpg)
+![HR_HRV](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Normalized%20HR%20and%20HRV%20vs%20Time%20(Subject%202).jpg?raw=true) | ![SCR_SCL](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Normalized%20SCR%20and%20SCL%20vs%20Time%20(Subject%202).jpg?raw=true)
 
+It is expected that HR increases, HRV decreases, SCR, and SCL increase as stress increases [8]. At 10 and 20 minutes, HR  and SCL decreased while HRV increased, indicating low stress. In contrast, HR and SCL increased while HRV is decreased during 40-60 minutes, implying an increase in stress. There was high variability in the SCR rendering it unusable for stress indication. Our experiment indicates HR, HRV, and SCR could make good indicators of prolong stress. 
 
-
-It is expected that HR increases [8], HRV decreases [8], LF/HF increases [8] as user becomes more mentally fatigued. Additionally, SCR and SCL should increase as stress increases. 
-
-From the tables summarizing Subject 2's data, some of the expected behavior can be spotted. For example between 10-20 minutes, HR is low, HRV is high, and SCL is low (relativly). And between 40-60 minute, HR is high, HRV is low, and the SCL is high. There was a lot variability in the SCR making it usuable for stress indication.  From our experiment, it seems the HR,HRV, and SCR feature are the best indicator to likely indicate stress. 
-
-Next Steps-Refinement:
+### Next Steps-Refinement:
 * Research additional biosignals that more accurately indicate stress
 * Alter electrode placement to maximize signal clarity
 * Introduce stimuli and event markers to better measure EDA values
