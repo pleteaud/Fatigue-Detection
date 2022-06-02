@@ -83,4 +83,3 @@ It is expected that HR increases, HRV decreases, SCR, and SCL increase as stress
 
 
 
-
