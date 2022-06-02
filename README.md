@@ -67,16 +67,13 @@ Given that prolonged stress is the main contributor to mental fatigue, a possibl
 ![Classification_Workflow](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Possible%20Classification%20Workflow.jpg?raw=true)
 
 ## Results and Conclusion
-Below is a table summarizing features that displayed a pattern for Subject 2: 
+Below are two graphs summarizing the notable features for Subject 2: 
+
 Normalized HR and HRV vs Time (Subject 2) |  Normalized SCR and SCL vs Time (Subject 2)
 :-------------------------:|:-------------------------:
-![HR_HRV](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(ECG).jpg) | ![SCR_SCL](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(EDA).jpg)
+![HR_HRV](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Normalized%20HR%20and%20HRV%20vs%20Time%20(Subject%202).jpg?raw=true) | ![SCR_SCL](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Normalized%20SCR%20and%20SCL%20vs%20Time%20(Subject%202).jpg?raw=true)
 
-
-
-It is expected that HR increases [8], HRV decreases [8], LF/HF increases [8] as user becomes more mentally fatigued. Additionally, SCR and SCL should increase as stress increases. 
-
-From the tables summarizing Subject 2's data, some of the expected behavior can be spotted. For example between 10-20 minutes, HR is low, HRV is high, and SCL is low (relativly). And between 40-60 minute, HR is high, HRV is low, and the SCL is high. There was a lot variability in the SCR making it usuable for stress indication.  From our experiment, it seems the HR,HRV, and SCR feature are the best indicator to likely indicate stress. 
+It is expected that HR increases, HRV decreases, SCR, and SCL increase as stress increases [8]. At 10 and 20 minutes, HR  and SCL decreased while HRV increased, indicating low stress. In contrast, HR and SCL increased while HRV is decreased during 40-60 minutes, implying an increase in stress. There was high variability in the SCR rendering it unusable for stress indication. Our experiment indicates HR, HRV, and SCR could make good indicators of prolong stress. 
 
 Next Steps-Refinement:
 * Research additional biosignals that more accurately indicate stress
