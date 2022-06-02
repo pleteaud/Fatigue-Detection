@@ -39,7 +39,7 @@ FEATURES TO BE EXTRACTED FROM ECG SIGNAL |  FEATURES TO BE EXTRACTED FROM EDA SI
 :-------------------------:|:-------------------------:
 ![ECG Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(ECG).jpg) | ![EDA Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(EDA).jpg)
 
-### Analysis Steps For ECG
+### Analysis Steps For ECG Data
 #### Time Domain Analysis
 * Plot of the ECG data with the R and S wave labeled was created.
 * Heart Rate was calculated as number of peaks per minutes.
@@ -50,13 +50,10 @@ FEATURES TO BE EXTRACTED FROM ECG SIGNAL |  FEATURES TO BE EXTRACTED FROM EDA SI
 * The periodogram power spectral density estimate was calculated and plotted.
 * The area under the curve for the LF, HF, and Total band was calculated using the power spectral density plot.
 
-Subject A - Day One - ECG Raw |  Subject A - Day One - ECG Processed | Subject A - Day One - ECG Feature Trends | Subject A - Day One - Power Spectral Density
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![ECG_Raw](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20ECG%20Raw.jpg?raw=true) | ![ECG Processed](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20ECG.jpg?raw=true) | ![ECG FT Trend](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20Heart%20Trends.jpg?raw=true) | ![ECG PSD](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/ECG%20Analysis/Images/Subject%20A%20-%20Day%20One%20-%20PSD.jpg?raw=true)
-
-### Analysis Steps For EDA
+### Analysis Steps For EDA Data
 #### Time Domain Analysis
 * Mean SCL and SCR was extracted using Ledalab[6]
+![EDA Extract](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/LEDALAB%20example%20EDA%20extraction.jpg?raw=true)
 * Results were averaged over each session of tests for Mean SCL and SCR.
 
 ## Classification Approach
