@@ -39,9 +39,7 @@ FEATURES TO BE EXTRACTED FROM ECG SIGNAL |  FEATURES TO BE EXTRACTED FROM EDA SI
 :-------------------------:|:-------------------------:
 ![ECG Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(ECG).jpg) | ![EDA Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(EDA).jpg)
 
-### ECG
-Raw data was filtered using a Butterworth low pass filter (N-Order and Cutoff frequency varied based on the quality of signal)
-%%% image of raw data and filtered data
+### Analysis Steps For ECG
 #### Time Domain Analysis
 * Plot of the ECG data with the R and S wave labeled was created.
 * Heart Rate was calculated as number of peaks per minutes.
@@ -50,16 +48,12 @@ Raw data was filtered using a Butterworth low pass filter (N-Order and Cutoff fr
 #### Frequency Domain Analysis
 * A bandpass filter was used to filter the ECG signal into the LF band (0.04-0.15Hz) and HF band (0.15–0.4 Hz) [10].
 * The periodogram power spectral density estimate was calculated and plotted.
-%%% image of power spectral density
 * The area under the curve for the LF, HF, and Total band was calculated using the power spectral density plot.
 
-### EDA
-Raw data was filtered using a Butterworth low pass filter (N-Order = 5, Cut-off Frequency of 5Hz)
-
+### Analysis Steps For EDA
 #### Time Domain Analysis
 * Mean SCL and SCR was extracted using Ledalab[6]
 * Results were averaged over each session of tests for Mean SCL and SCR.
-%%%%% image of ledalab processing
 
 ## Classification Approach
 Given that prolonged stress is the main contributor to mental fatigue, a possible classification algorithm could go as follows (using the subject's min and max mean EDA and ECG features as stress thresholds):
