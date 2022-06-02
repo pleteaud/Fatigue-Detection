@@ -67,7 +67,7 @@ Given that prolonged stress is the main contributor to mental fatigue, a possibl
 ![Classification_Workflow](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Possible%20Classification%20Workflow.jpg?raw=true)
 
 ## Results and Conclusion
-Below are two graphs summarizing the notable features for Subject 2: 
+### Notable features for Subject 2: 
 
 Normalized HR and HRV vs Time (Subject 2) |  Normalized SCR and SCL vs Time (Subject 2)
 :-------------------------:|:-------------------------:
@@ -75,7 +75,7 @@ Normalized HR and HRV vs Time (Subject 2) |  Normalized SCR and SCL vs Time (Sub
 
 It is expected that HR increases, HRV decreases, SCR, and SCL increase as stress increases [8]. At 10 and 20 minutes, HR  and SCL decreased while HRV increased, indicating low stress. In contrast, HR and SCL increased while HRV is decreased during 40-60 minutes, implying an increase in stress. There was high variability in the SCR rendering it unusable for stress indication. Our experiment indicates HR, HRV, and SCR could make good indicators of prolong stress. 
 
-Next Steps-Refinement:
+### Next Steps-Refinement:
 * Research additional biosignals that more accurately indicate stress
 * Alter electrode placement to maximize signal clarity
 * Introduce stimuli and event markers to better measure EDA values
