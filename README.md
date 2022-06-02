@@ -33,7 +33,10 @@ ELECTRODE PLACEMENT FOR EDA SENSOR |  ELECTRODE PLACEMENT FOR ECG SENSOR
 
 
 ## Feature Extraction (Data Analysis)
-The collected ECG and EDA data were analyzed in both the time and frequency domain to extract the features listed in Table I and II. Many of these features have been used to detect stress in working environments [7] and mental fatigue in people, like drivers [8].
+The raw ECG and EDA data were filtered using a Butterworth low pass filter and analyzed in either/both the time and frequency domain for the following features: 
+
+
+sted in Table I and II. 
 
 %% insert images of table
 
