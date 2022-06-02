@@ -5,29 +5,32 @@ by Dave Pleteau, Eric Alvarez, Nicolo Mega
 
 # The Premise
 ## Context
-Fatigue can create a range of different physical, mental, or emotional symptoms, such as nausea, depression, and a general reduction in mental or physical productivity [1]. Of particular interest is mental fatigue, often caused by prolonged cognitive activity or stress and characterized by feeling of “tiredness” or exhaustion. This sate of mind can severely hinder one’s performance at their job and could lead to range of different negative effects including, but not limited to: feelings of depression, increased irritability, feeling lethargic, and difficulty concentrating.
+Mental fatigue, often caused by prolonged cognitive activity or stress and characterized by feeling of “tiredness” or exhaustion, can severely hinder one’s performance in their job and could lead to negative effects including, but not limited to: feelings of depression, increased irritability, feeling lethargic, and difficulty concentrating[1].
 
 ## Our proposed solution
-Use BITalino’s electrocardiography (ECG) and electrodermal (EDA) sensors along with OpenSignals and MATLAB to detect any correlation between any ECG or EDA features (e.g HRV, SCL/SCR) and mental fatigue. Once a pattern is detected, possibly develope a rough algorithm to detect and indicate fatigue to an individual using real time physiological data. Our hope is that this project can a new perspective to the way wearable devices detect mental fatigue in idividuals.
+Use BITalino’s electrocardiography (ECG) and electrodermal (EDA) sensors with OpenSignals and MATLAB to detect any correlation between ECG or EDA features and mental fatigue. We are particularly interested in Heart Rate (HR), Heart Rate Variability (HRV), Skin Conductance Level (SCR), and Skin Conductance Response (SCR). Leverage collected biometrics to develop a rough algorithm to detect and indicate fatigue in an individual. We hope this project can provide a new perspective on designing wearable devices to detect mental fatigue in individuals.
 
 # Data Analysis
 
 ## Procedure
 
-Three participants were selected to take part of our project. Each subject were required to take a total of four unique practice SAT exams consisted of only the Writing (35 min.) and Math No Calculator sections (25 min.). Subjects took only one test per day and were required to give at least one day interval between consecutive tests (i.e 4 testing days). 
+Three subjects participated in our project. Each participant was tasked with taking four unique SAT exams consisting of only the Writing (35 min) and Math No-Calculator sections (25 min). Subjects took only one test per day and were required to space each test by at least one day
 
 ### Testing Day 1: 
-* The first test was taken at the point of the day where user feels most ready. 
-* Score acted as the baseline performance to compare. 
+* The first test was taken at the point of the day when user felt most ready. 
+* Score acted as the baseline performance to compare future test results.
 * No ECG and EDA data were collected.
 
 ### Testing Day 2-4:
-* 2 minute of ECG and EDA signals were recorded in the morning (provided baseline 'alert/refreshed' for each participant).
-* Participants continued their day until around 6PM, at which point they are tasked with taking a test.
+* 2 minutes of ECG and EDA signals were recorded in the morning (provided baseline biometrics for the 'refreshed' state of the participants).
+* Participants continued their day until around 6 PM, at which point they were tasked with taking a test.
 * During the test, signals were recorded for 30 seconds at time = 0, 10, 20, 30, 40, 50, 60 minutes.
 
 ### Sensor Placement
-%%%% images
+ELECTRODE PLACEMENT FOR EDA SENSOR |  ELECTRODE PLACEMENT FOR ECG SENSOR
+:-------------------------:|:-------------------------:
+![EDA](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/EDA%20Sensor%20Placement.jpg) | ![ECG](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/ECG%20Sensor%20Placement.jpg)
+
 
 ## Feature Extraction (Data Analysis)
 The collected ECG and EDA data were analyzed in both the time and frequency domain to extract the features listed in Table I and II. Many of these features have been used to detect stress in working environments [7] and mental fatigue in people, like drivers [8].
