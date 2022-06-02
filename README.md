@@ -60,7 +60,7 @@ Given that prolonged stress is the main contributor to mental fatigue, a possibl
 ![Classification_Workflow](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Possible%20Classification%20Workflow.jpg?raw=true)
 
 # Results and Conclusion
-## Notable features for Subject 2: 
+## Notable features for subject 2: 
 
 Normalized HR and HRV vs Time (Subject 2) |  Normalized SCR and SCL vs Time (Subject 2)
 :-------------------------:|:-------------------------:
