@@ -62,10 +62,11 @@ Raw data was filtered using a Butterworth low pass filter (N-Order = 5, Cut-off 
 %%%%% image of ledalab processing
 
 ## Classification Approach
-Given prolong stress is the main contributer of mental fatigue, our proposed algorithm to determining if an individual is going to be mentally exhausted is as follows:
+Given prolonged stress is the main contributor to mental fatigue, our proposed algorithm for determining if an individual is going to be mentally exhausted is as follows:
 
-* Create stress thresholds based on the lowest and max mean EDA and ECG features (e.g linearly map feature values).
-* If the user is near or at the max feature value for an excessive amount of time (.75 hour), indicate to them to take a break or they'll start to to be feel mentally tired.
+1. Create stress thresholds based on the lowest and max mean EDA and ECG features (e.g linearly map feature values).
+2. If the user is near or at the max feature value for an excessive amount of time (.75 hour), indicate to them to take a break.
+
 %%%% insert rough diagram of workflow
 
 ## Results and Conclusion
