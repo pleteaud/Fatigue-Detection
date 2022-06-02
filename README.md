@@ -35,10 +35,9 @@ ELECTRODE PLACEMENT FOR EDA SENSOR |  ELECTRODE PLACEMENT FOR ECG SENSOR
 ## Feature Extraction (Data Analysis)
 The raw ECG and EDA data were filtered using a Butterworth low pass filter and analyzed in either/both the time and frequency domain for the following features: 
 
-
-sted in Table I and II. 
-
-%% insert images of table
+FEATURES TO BE EXTRACTED FROM ECG SIGNAL |  FEATURES TO BE EXTRACTED FROM EDA SIGNAL
+:-------------------------:|:-------------------------:
+![ECG Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(ECG).jpg) | ![EDA Features](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(EDA).jpg)
 
 ### ECG
 Raw data was filtered using a Butterworth low pass filter (N-Order and Cutoff frequency varied based on the quality of signal)
