@@ -67,7 +67,7 @@ Given prolonged stress is the main contributor to mental fatigue, our proposed a
 1. Create stress thresholds based on the lowest and max mean EDA and ECG features (e.g linearly map feature values).
 2. If the user is near or at the max feature value for an excessive amount of time (.75 hour), indicate to them to take a break.
 
-%%%% insert rough diagram of workflow
+![Classification_Workflow](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Possible%20Classification%20Workflow.jpg?raw=true)
 
 ## Results and Conclusion
 
