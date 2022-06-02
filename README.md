@@ -62,17 +62,21 @@ Raw data was filtered using a Butterworth low pass filter (N-Order = 5, Cut-off 
 %%%%% image of ledalab processing
 
 ## Classification Approach
-Given prolonged stress is the main contributor to mental fatigue, a possible classification algorithm could go as follows (using the subject's min and max mean EDA and ECG features as stress thresholds):
+Given that prolonged stress is the main contributor to mental fatigue, a possible classification algorithm could go as follows (using the subject's min and max mean EDA and ECG features as stress thresholds):
 
 ![Classification_Workflow](https://github.com/pleteaud/Fatigue-and-Stress-Detection/blob/main/Code%20+%20Data/Possible%20Classification%20Workflow.jpg?raw=true)
 
 ## Results and Conclusion
+Below is a table summarizing features that displayed a pattern for Subject 2: 
+Normalized HR and HRV vs Time (Subject 2) |  Normalized SCR and SCL vs Time (Subject 2)
+:-------------------------:|:-------------------------:
+![HR_HRV](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(ECG).jpg) | ![SCR_SCL](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/Time%20and%20Frequency%20Domain%20Features%20to%20Be%20Extracted%20(EDA).jpg)
+
+
 
 It is expected that HR increases [8], HRV decreases [8], LF/HF increases [8] as user becomes more mentally fatigued. Additionally, SCR and SCL should increase as stress increases. 
 
-%%%5Insert Image of results
-
-From the tables summarizing Subject 2's data, some of the expected behavior can be spotted. For example between 10-20 minutes, HR is low, HRV is high, and SCL is low (relativly). And between 40-60 minute, HR is high, HRV is low, and the SCL is high. There was a lot variability in the SCR making it usuable for stress indication. On the contraritly, there were little to no variability in the LF/HF during the test, also making it unusable for stress indication. From our experiment, it seems the HR,HRV, and SCR feature are the best indicator to likely indicate stress. 
+From the tables summarizing Subject 2's data, some of the expected behavior can be spotted. For example between 10-20 minutes, HR is low, HRV is high, and SCL is low (relativly). And between 40-60 minute, HR is high, HRV is low, and the SCL is high. There was a lot variability in the SCR making it usuable for stress indication.  From our experiment, it seems the HR,HRV, and SCR feature are the best indicator to likely indicate stress. 
 
 Next Steps-Refinement:
 * Research additional biosignals that more accurately indicate stress
