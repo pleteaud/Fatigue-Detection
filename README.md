@@ -29,8 +29,8 @@ Three subjects participated in our project. Each participant was tasked with tak
 ### Sensor Placement
 ELECTRODE PLACEMENT FOR EDA SENSOR |  ELECTRODE PLACEMENT FOR ECG SENSOR
 :-------------------------:|:-------------------------:
-![EDA](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/EDA%20Sensor%20Placement.jpg) |
-![ECG](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/ECG%20Sensor%20Placement.jpg)
+![EDA](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/EDA%20Sensor%20Placement.jpg) | ![ECG](https://raw.githubusercontent.com/pleteaud/Fatigue-and-Stress-Detection/main/Code%20%2B%20Data/ECG%20Sensor%20Placement.jpg)
+
 
 ## Feature Extraction (Data Analysis)
 The collected ECG and EDA data were analyzed in both the time and frequency domain to extract the features listed in Table I and II. Many of these features have been used to detect stress in working environments [7] and mental fatigue in people, like drivers [8].
