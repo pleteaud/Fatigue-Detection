@@ -83,7 +83,7 @@ It is expected that HR increases, HRV decreases, SCR, and SCL increase as stress
 
 
 # References
-[1] “Fatigue,” Fatigue - Better Health Channel. [Online]. Available: https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/fatigue. [Accessed: 11-Feb-2022].
+[1] “Fatigue,” Fatigue - Better Health Channel. [Online]. Available: https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/fatigue. [Accessed: 11-Feb-2022]. <br>
 [2] A. Matuz, D. van der Linden, Z. Kisander, I. Hernádi, K. Kázmér, and Á. Csathó, “Enhanced cardiac vagal tone in mental fatigue: Analysis of heart rate variability in time-on-task, recovery, and reactivity,” PLOS ONE. [Online]. Available: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0238670. [Accessed: 14-Apr-2022].
 [3] S. Mosher and K. A. Robbins, “Skin conductance as a measure of fatigue in different tasks,” Home, 01-Jan-1970. [Online]. Available: https://rrpress.utsa.edu/handle/20.500.12588/104. [Accessed: 14-Apr-2022].
 [4] L. M. Feehan, J. Geldman, E. C. Sayre, C. Park, A. M. Ezzat, J. Y. Yoo, C. B. Hamilton, and L. C. Li, “Accuracy of Fitbit devices: Systematic review and narrative syntheses of quantitative data,” JMIR mHealth and uHealth, 09-Aug-2018. [Online]. Available: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6107736/. [Accessed: 11-Feb-2022].
