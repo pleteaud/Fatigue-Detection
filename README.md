@@ -82,7 +82,16 @@ It is expected that HR increases, HRV decreases, SCR, and SCL increase as stress
 * Implement a formal questionnaire to indicate subjective level of fatigue correlated to trends in biosignals
 
 
-
+# References
+[1] “Fatigue,” Fatigue - Better Health Channel. [Online]. Available: https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/fatigue. [Accessed: 11-Feb-2022].
+[2] A. Matuz, D. van der Linden, Z. Kisander, I. Hernádi, K. Kázmér, and Á. Csathó, “Enhanced cardiac vagal tone in mental fatigue: Analysis of heart rate variability in time-on-task, recovery, and reactivity,” PLOS ONE. [Online]. Available: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0238670. [Accessed: 14-Apr-2022].
+[3] S. Mosher and K. A. Robbins, “Skin conductance as a measure of fatigue in different tasks,” Home, 01-Jan-1970. [Online]. Available: https://rrpress.utsa.edu/handle/20.500.12588/104. [Accessed: 14-Apr-2022].
+[4] L. M. Feehan, J. Geldman, E. C. Sayre, C. Park, A. M. Ezzat, J. Y. Yoo, C. B. Hamilton, and L. C. Li, “Accuracy of Fitbit devices: Systematic review and narrative syntheses of quantitative data,” JMIR mHealth and uHealth, 09-Aug-2018. [Online]. Available: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6107736/. [Accessed: 11-Feb-2022].
+[5] Sarah Ostadabbas (2022). Biosignal-Specific Processing (Bio-SP) Tool (https://www.mathworks.com/matlabcentral/fileexchange/64013-biosignal-specific-processing-bio-sp-tool), MATLAB Central File Exchange. Retrieved February 11, 2022.
+[6] Benedek, M., & Kaernbach, C. (2010b). A continuous measure of phasic electrodermal activity. Journal of Neuroscience Methods, 190(1), 80–91.
+[7] “Evaluation of an Integrated System of Wearable Physiological Sensors for Stress Monitoring in Working Environments by Using Biological Markers,” IEEE Trans. Biomed. Eng., vol. 65, no. 8, pp. 1748–1758, Aug. 2018, doi: 10.1109/TBME.2017.2764507.
+[8] A. Nemcova et al., “Multimodal Features for Detection of Driver Stress and Fatigue: Review,” IEEE Trans. Intell. Transport. Syst., vol. 22, no. 6, pp. 3214–3233, Jun. 2021, doi: 10.1109/TITS.2020.2977762. [9] Citi, L., Brown, E. N., & Barbieri, R. (2012). A real-time automated point-process method for the detection and correction of erroneous and ectopic heartbeats. IEEE transactions on biomedical engineering, 59(10), 2828-2837.
+[10] F. Shaffer and J. P. Ginsberg, “An overview of heart rate variability metrics and norms,” Frontiers in public health, 28-Sep-2017. [Online]. Available: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5624990/. [Accessed: 11-Mar-2022].
 
 
 
