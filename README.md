@@ -1,4 +1,4 @@
-# Fatigue Detection in Office Work using Electrocardiography and Electrodermal Activity
+# Mental Fatigue Detection in Office Work using Electrocardiography and Electrodermal Activity
 ### Our Northeastern University Healthcare Technologies Project (Completed on April 2022)
 by Dave Pleteau, Eric Alvarez, Nicolo Mega
 
